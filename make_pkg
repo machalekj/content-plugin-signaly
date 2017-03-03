@@ -1,0 +1,5 @@
+#!/bin/bash
+
+version=$(grep '<version>' signaly.xml | sed -e 's/<[a-z\/]*>//g' | sed -e 's/\t *//g')
+
+zip -r content_plugin_signaly-${version}.zip assets signaly.php signaly.xml index.html *.ini

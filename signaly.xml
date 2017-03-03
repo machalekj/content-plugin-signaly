@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>plg_content_signaly</name>
+	<author>Jiri Machalek</author>
+	<creationDate>March 2017</creationDate>
+	<authorEmail>machalekj@gmail.com</authorEmail>
+	<version>0.1.1</version>
+	<description>PLG_CONTENT_SIGNALY_XML_DESCRIPTION</description>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<files>
+		<filename plugin="signaly">signaly.php</filename>
+		<filename plugin="signaly">index.html</filename>
+		<folder plugin="signaly">assets</folder>
+	</files>
+	<languages>
+		<language tag="cs-CZ">cs-CZ.plg_content_signaly.ini</language>
+		<language tag="cs-CZ">cs-CZ.plg_content_signaly.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_content_signaly.ini</language>
+		<language tag="en-GB">en-GB.plg_content_signaly.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="popup_mode" type="radio" default="1" label="PLG_CONTENT_SIGNALY_XML_OPEN_IN_NEW_WINDOW" description="">
+					<option value="0">PLG_CONTENT_SIGNALY_XML_NO</option>
+					<option value="1">PLG_CONTENT_SIGNALY_XML_YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
